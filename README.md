@@ -1,2 +1,2 @@
-# vsh_test_code_it
-vsh_test_code_it
+install gulp for creating build folder, which is main test-folder.
+for testing page, you can see in build folder.

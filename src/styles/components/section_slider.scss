@@ -1,0 +1,90 @@
+.campaign{
+  width: 100%;
+  .slider{
+    position: relative;
+    width: 100%;
+    .owl-wrapper-outer{
+      height: 535px;
+    }
+    .item{
+      width: 100%;
+      height: 535px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.owl-theme{
+      .owl-controls{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        .owl-pagination{
+          .owl-page{
+            &:hover span{
+              background: #fff;
+            }
+            span{
+              background: #2d3039;
+            }
+            &.active{
+              &:hover span{
+                background: #fff;
+              }
+              span{
+                background: #fff;
+                &:hover{
+                  background: #fff;
+                }
+              }
+            }
+          }
+        }
+        //margin: -20px 0 0 0;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 480px) and  (max-width: 600px) {
+  .campaign{
+    .slider{
+      .owl-wrapper-outer{
+        height: 400px;
+      }
+      .item{
+        img{
+        }
+      }
+      &.owl-theme{
+        .owl-controls{
+          .owl-pagination{
+            .owl-page{
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and  (max-width: 480px) {
+  .campaign{
+    .slider{
+      .owl-wrapper-outer{
+        height: 280px;
+      }
+      .item{
+        img{
+        }
+      }
+      &.owl-theme{
+        .owl-controls{
+          .owl-pagination{
+            .owl-page{
+            }
+          }
+        }
+      }
+    }
+  }
+}

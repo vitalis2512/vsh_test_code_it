@@ -1,0 +1,33 @@
+body{
+  font-family: Arimo, sans-serif;
+  font-size: 14px;
+  color: #767676;
+}
+.wrapper{
+  min-height: 100%;
+  width: 100%;
+  //margin: 0 auto;
+  position: relative;
+}
+.content {}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.overthrow-enabled .overthrow {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width: 1100px) {
+  .container{
+    padding: 0 10px;
+    /*&Small{}*/
+  }
+}
+@media only screen and (min-width: 0px) and  (max-width: 600px) {
+  .content {
+    margin: 0 0 40px 0!important;
+  }
+}

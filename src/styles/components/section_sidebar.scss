@@ -1,0 +1,129 @@
+.content{
+  > .container{
+    overflow: hidden;
+  }
+  .sidebar{
+    width: 20.5%;
+    float: left;
+    //max-width: 210px;
+    &List{
+      margin: 0 0 62px 0;
+      li{
+        display: block;
+        margin: 0 0 15px 0;
+        a{
+          display: block;
+          color: #767676;
+          font-family: Arimo, sans-serif;
+          font-size: 16px;
+          margin: 0 0 10px 0;
+        }
+        .hide_list{
+          span{
+            font-style: normal;
+            font-weight: 400;
+            display: block;
+            margin: 0 0 13px 0;
+            color: #010101;
+            font-family: Arimo, sans-serif;
+            font-size: 18px;
+          }
+          > .apps{
+            padding: 0 0 0 10px;
+            > li{
+              padding: 0 0 0 10px;
+              margin: 0 0 6px 0;
+              position: relative;
+              &:before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                margin: -2px 0 0 0;
+                background: #767676;
+                border-radius: 50%;
+              }
+              > a{
+                margin: 0;
+                display: inline-block;
+                font-size: 14px;
+                font-family: Arimo, sans-serif;
+                color: #767676;
+                border-bottom: 1px solid transparent;
+                &.active{
+                  color: #010101;
+                  border-bottom: 1px solid #010101;
+                }
+                &:hover{
+                  font-style: normal;
+                  font-weight: 700;
+                  color: #010101;
+                  border-bottom: 1px solid #010101;
+                }
+              }
+              &.active{
+                > a{
+                  font-style: normal;
+                  font-weight: 700;
+                  color: #010101;
+                  border-bottom: 1px solid #010101;
+                }
+              }
+              &:last-child{
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .price{
+      font-size: 16px;
+      font-family: Arimo, sans-serif;
+      font-weight: 700;
+      color: #282c37;
+      min-height: 45px;
+      line-height: 45px;
+      background: url("/img/price.png") no-repeat 0 0;
+      padding: 0 0 0 60px;
+      display: block;
+    }
+  }
+}
+@media only screen and (min-width: 0px) and  (max-width: 600px) {
+  .sidebar{
+    display: none;
+  }
+  .products{
+    width: 100%!important;
+    float: none!important;
+    padding: 0!important;
+    &List{
+      overflow: visible!important;
+      .product{
+        float: none!important;
+        width: 100%!important;
+      }
+    }
+    &Text{
+      overflow: visible!important;
+      width: 100%!important;
+      margin: 0!important;
+      &Left{
+        width: 100%!important;
+        display: block!important;
+        float: none!important;
+        border-bottom: 1px solid #767676;
+        padding: 0 0 10px 0;
+      }
+      &Right{
+        padding: 10px 0 0 0;
+        width: 100%!important;
+        display: block!important;
+        float: none!important;
+      }
+    }
+  }
+}

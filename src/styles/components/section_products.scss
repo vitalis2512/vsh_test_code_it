@@ -1,0 +1,128 @@
+.content{
+  background: transparent;
+  margin: 0 0 85px 0;
+  .products{
+    width: 78.5%;
+    padding: 0 0 0 9.82px;
+    float: left;
+    &List{
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      margin: 0 0 18.5px 0;
+      .product{
+        margin: 0 3% 20px 0;
+        width: 31%;
+        border: 1px solid #e4e4e4;
+        border-radius: 3px;
+        background: #fff;
+        float: left;
+        &:nth-child(3n){
+          margin: 0;
+        }
+        &Top{
+          padding: 13px 15px;
+          &Image{
+            text-align: center;
+            margin: 0 0 20px 0;
+            img{
+              width: auto;
+              display: inline-block;
+            }
+          }
+          &Description{
+            p{
+              text-align: center;
+              margin: 0;
+              padding: 0;
+              color: #767676;
+              line-height: 1.5;
+              font-size: 16px;
+              font-family: Arimo, sans-serif;
+              text-transform: uppercase;
+            }
+          }
+        }
+        &Price{
+          border-top: 1px solid #e4e4e4;
+          padding: 12px 15px;
+          color: #444;
+          font-family: Arimo, sans-serif;
+          font-size: 28px;
+          font-weight: 700;
+          background: url("/img/price_part.png") no-repeat 93% 47%;
+        }
+      }
+    }
+    &Nav{
+      display: block;
+      margin: 0 0 40px 0;
+      text-align: center;
+      li{
+        display: inline-block;
+        margin: 0 16px 0 0;
+        a{
+          border-bottom: 1px solid transparent;
+          color: #767676;
+          font-size: 14px;
+          font-family: Arimo, sans-serif;
+          display: inline-block;
+          &:hover{
+            border-bottom: 1px solid #010101;
+          }
+        }
+        &.active{
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &Text{
+      padding: 35px 0 0 0;
+      border-top: 1px solid #777;
+      width: 100%;
+      margin: 0 0 0 -9.82px;
+      overflow: hidden;
+      &Left{
+        width: 48%;
+        margin: 0 4% 0 0;
+        line-height: 22px;
+        font-size: 14px;
+        font-family: Arimo, sans-serif;
+        font-weight: 400;
+        color: #767676;
+        float: left;
+      }
+      &Right{
+        width: 48%;
+        margin: 0;
+        line-height: 22px;
+        font-size: 14px;
+        font-family: Arimo, sans-serif;
+        font-weight: 400;
+        color: #767676;
+        float: left;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 802px) and  (max-width: 1102px) {
+  .content{
+    .products{
+      width: 78%;
+    }
+  }
+}
+@media only screen and (min-width: 600px) and  (max-width: 802px) {
+  .content{
+    .products{
+      width: 77.5%;
+      &List{
+        .product{
+          width: 30%;
+        }
+      }
+    }
+  }
+}

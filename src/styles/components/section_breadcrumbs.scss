@@ -1,0 +1,25 @@
+.breadcrumbs{
+  background: transparent;
+  padding: 35px 0;
+  ul{
+    display: block;
+    li{
+      display: inline-block;
+      margin: 0 10px 0 0;
+      padding: 0 20px 0 0;
+      background: url("/img/triangle.png") no-repeat 100% 50%;
+      a{
+        display: block;
+        font-family: Arimo, sans-serif;
+        font-size: 14px;
+        color: #282c37;
+      }
+      &.current{
+        background: none;
+        a{
+          color: #767676;
+        }
+      }
+    }
+  }
+}

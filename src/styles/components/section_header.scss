@@ -1,0 +1,290 @@
+.header{
+  background: #fff;
+  line-height: normal;
+  > .container{
+    padding: 0;
+  }
+  &Top{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 92px;
+    &Cell{
+      display: table-cell;
+      vertical-align: middle;
+      width: 50%;
+      padding: 0 0 0 10px;
+      &:last-child{
+        padding: 0 10px 0 0;
+      }
+      &.logo{
+        a{
+          display: inline-block;
+          img{
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+      &.info{
+        text-align: right;
+        .infoInner{
+          width: 100%;
+          display: inline-block;
+          overflow: hidden;
+          span{
+            float: right;
+            margin: 0 20px 0 0;
+            p{
+              font-size: 18px;
+              font-family: 'Arimo', sans-serif;
+              color: #767676;
+              margin: 0 0 4px 0;
+              &:last-child{
+                margin: 0;
+              }
+            }
+          }
+          a{
+            text-align: center;
+            margin: 4px 0 0 0;
+            float: right;
+            span{
+              background: #282c37;
+              display: block;
+              padding: 10px 20px;
+              font-size: 15px;
+              font-family: 'Arimo', sans-serif;
+              text-transform: uppercase;
+              color: #fff;
+              text-align: center;
+              margin: 0;
+            }
+            .g-hidden {
+              display: none;
+            }
+            .g-line {
+              zoom: 1;
+            }
+            .g-line:after {
+              content: "."; display: block; height: 0; clear: both; visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+  &Menu{
+    width: 100%;
+    background: #282c37;
+    &Inner{
+      text-align: center;
+      &List{
+        max-width: 100%;
+        overflow: hidden;
+        text-align: center;
+        display: inline-block;
+        li{
+          float: left;
+          padding: 30px 0;
+          width: auto;
+          vertical-align: middle;
+          text-align: center;
+          &:first-child{
+            a {
+              text-align: right;
+            }
+          }
+          &:last-child{
+            a{
+              text-align: left;
+              border-right: none;
+            }
+          }
+          a{
+            border-right: 1px solid #424757;
+            padding: 0 47px 0 43px;
+            display: inline-block;
+            span{
+              border-bottom: 1px solid transparent;
+              font-size: 15px;
+              font-family: Arimo, sans-serif;
+              color: #fff;
+              text-transform: uppercase;
+            }
+            &:hover span{
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  &WrapMobile{
+    display: none;
+    padding: 15px 0;
+    &Logo{
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
+      padding: 0 0 0 10px;
+    }
+    &Menu{
+      text-align: right;
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
+      padding: 0 10px 0 0;
+      .headerCollapsedMenu{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url("/img/navigationIcon.png") no-repeat;
+        background-position: 0 50%;
+      }
+    }
+  }
+}
+#slideMenu{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  width: 100%;
+  padding-right: 0;
+  right: -100%;
+  background: #151819;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: 999999999;
+  top: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  &.slided{
+    right: 0;
+  }
+}
+.slideMenu {
+  &Container {
+    padding: 0 10px;
+    margin: 0!important;
+  }
+  .slideMenuItem{
+    display: block;
+    width: 100%;
+    li{
+      padding: 20px 0;
+      display: block;
+      border-bottom: 1px solid #fff;
+      a{
+        display: block;
+        font-family: Arimo, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .nano {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .nano-slider{
+      position: relative;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header{
+    > .container{
+      display: none;
+    }
+    &Menu{
+      display: none;
+    }
+    &WrapMobile{
+      display: table;
+      width: 100%;
+    }
+  }
+  .wrapper {
+    &.slided {
+      height: 100%;
+      overflow: hidden;
+      margin-left: -100%;
+      .topHeader {
+        right: 100%;
+      }
+    }
+  }
+
+  .slideMenu {
+    width: 100%;
+    padding-right: 0;
+    height: 100%;
+    overflow: hidden;
+    &Close {
+      padding: 10px;
+      text-align: left;
+      img{
+        display: inline-block;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      display: block!important;
+    }
+    &SearchBlock {
+      margin-top: 60px;
+    }
+  }
+
+  .nano {
+    .nano-pane {
+      margin-top: 0;
+    }
+  }
+
+}
+@media only screen and (min-width: 600px) and  (max-width: 980px) {
+  .header{
+    &Menu{
+      &Inner{
+        &List{
+          li{
+            a{
+              padding: 0 16px;
+              span{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) and  (max-width: 640px) {
+  .header{
+    &Top{
+      &Cell{
+        &.info{
+          .infoInner{
+            span{
+              p{
+                font-size: 14px;
+              }
+            }
+            a{
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

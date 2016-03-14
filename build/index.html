@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta charset="utf-8" />
+        <title>test_code_it</title>
+    
+        <!-- Mobile Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    
+    
+        <!--<meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />-->
+    
+    
+        <!-- Internet Explore -->
+        <meta http-equiv="cleartype" content="on" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    
+        <!-- Favicon -->
+        <!--<link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />-->
+    
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Arimo:400italic' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Arimo:700italic' rel='stylesheet' type='text/css' />
+    
+        <!--<link rel="stylesheet" type="text/css" href="/vendor/plugins/owl.carousel.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/plugins/owl.theme.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/plugins/owl.transitions.css" />-->
+    
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    
+        <!--<script type="text/javascript">
+            document.ondragstart = noselect;
+            // запрет на перетаскивание
+            document.onselectstart = noselect;
+            // запрет на выделение элементов страницы
+            document.oncontextmenu = noselect;
+            // запрет на выведение контекстного меню
+            function noselect() {return false;}
+        </script>-->
+    
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/" />
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="/" />
+        <!--<![endif]-->
+
+</head>
+<body>
+
+    <div id="wrapper" class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="headerTop">
+                    <div class="headerTopCell logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="headerTopCell info">
+                        <div class="infoInner">
+                            <a href="javascript:void(0);">
+                                <span class="m-dotted" id="feedback">Feedback</span>
+                                <div class="b-text g-hidden">
+                                    <div class="feedback_form">
+                                        <div class="feedback_formTitle">Feedback</div>
+                                        <form>
+                                            <label>
+                                                Name <span>*</span><br />
+                                                <input id="name" type="text" name="name" value="" />
+                                            </label>
+                                            <label>
+                                                Phone <span>*</span><br />
+                                                <input id="phone" type="tel" name="phone" value="" />
+                                            </label>
+                                            <label>
+                                                Email <span>*</span><br />
+                                                <input id="email" type="email" name="email" value="" />
+                                            </label>
+                                            <label>
+                                                Text <br />
+                                                <textarea></textarea>
+                                            </label>
+                                            <label class="button">
+                                                <input id="button" type="button" value="Submit" />
+                                            </label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                            <span>
+                                <p>+3 (050) 777 77 77</p>
+                                <p>+3 (050) 777 77 77</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerMenu">
+                <div class="headerMenuInner">
+                    <ul class="headerMenuInnerList">
+                        <li>
+                            <a href="#">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Catalog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Shipping and payment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Price</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerWrapMobile">
+                <div class="headerWrapMobileLogo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="headerWrapMobileMenu">
+                    <ul class="headerWrapMobileMenuList">
+                        <li>
+                            <a href="#" class="headerCollapsedMenu s"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="headerWrapMobileBottomBg"></div>
+            </div>
+        </header>
+        <div class="headerHelper"></div>
+
+        <section class="campaign">
+            <div class="slider">
+                <div class="item">
+                    <img src="/img/slide.png" alt="img" />
+                </div>
+                <div class="item">
+                    <img src="/img/slide.png" alt="img" />
+                </div>
+                <div class="item">
+                    <img src="/img/slide.png" alt="img" />
+                </div>
+            </div>
+        </section>
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Catalog</a>
+                    </li>
+                    <li class="current">
+                        <a href="#">Category name</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <article class="content">
+            <div class="container">
+
+                <aside class="sidebar">
+                    <ul class="sidebarList">
+                        <li class="active">
+                            <a href="#">Cars</a>
+                            <div class="hide_list">
+                                <span>Household Appliances</span>
+                                <ul class="apps">
+                                    <li class="active">
+                                        <a href="#">Microwaves</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fridges</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Посудомоечные машины</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dishwashers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Mobile Equipment</a>
+                            <div>
+                                <span></span>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Computers</a>
+                            <div>
+                                <span></span>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Clothing</a>
+                            <div>
+                                <span></span>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Real Estate</a>
+                            <div>
+                                <span></span>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="price">Price List</a>
+                </aside>
+                <section class="products">
+                    <div class="productsList">
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="productTop">
+                                <div class="productTopImage">
+                                    <img src="img/product.png" alt="image" />
+                                </div>
+                                <div class="productTopDescription">
+                                    <p>Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                $ 550.95
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="productsNav">
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+                        <li>
+                            <a href="#">7</a>
+                        </li>
+                    </ul>
+                    <section class="productsText">
+                        <div class="productsTextLeft">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl.
+                            Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta.
+                            Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit.
+                            In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum.
+                            In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl.
+                            Fusce egestas ligula vitae tristique dignissim.
+                        </div>
+                        <div class="productsTextRight">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl.
+                            Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta.
+                            Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit.
+                            In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum.
+                            In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl.
+                            Fusce egestas ligula vitae tristique dignissim.
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footerCopyright">
+                    © CodeIT 2012–2013,<br />
+                    All Rights Reserved.
+                </div>
+                <div class="footerMenu">
+                    <ul class="footerMenuList">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Shipping and payment</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div id="slideMenu" class="slideMenu">
+        <div class="nano">
+          <span class="slideMenuClose">
+            <img src="/img/closeSlideMenu.png" width="30" height="30" alt="close" title="close"/>
+          </span>
+          <div class="slideMenuContainer nano-content overthrow">
+              <ul class="slideMenuItem">
+                  <li>
+                      <a href="/" title="Home">Home</a>
+                  </li>
+                  <li>
+                      <a href="#" title="">Catalog</a>
+                  </li>
+                  <li>
+                      <a href="#">SHIPPING AND PAYMENT</a>
+                  </li>
+                  <li>
+                      <a href="#">Price</a>
+                  </li>
+                  <li>
+                      <a href="#">Contacts</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

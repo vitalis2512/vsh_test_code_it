@@ -1,0 +1,124 @@
+.arcticmodal-overlay,
+.arcticmodal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0; border: 0;
+  border-collapse: collapse;
+}
+*:first-child+html .arcticmodal-container {
+  height: 100%;
+}
+.arcticmodal-container_i {
+  height: 100%;
+  margin: 0 auto;
+}
+.arcticmodal-container_i2 {
+  padding: 24px;
+  margin: 0;
+  border: 0;
+  vertical-align: middle; }
+.arcticmodal-error {
+  background: #000;
+  color: #fff;
+}
+.arcticmodal-loading {
+  width: 80px;
+  height: 80px;
+  background: #000 url(/img/loading.gif) no-repeat 50% 50%;
+}
+
+
+
+.box-modal {
+  position: relative;
+  width: 340px;
+  padding: 30px 60px 20px 60px;
+  background: #fff;
+  //box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+  .feedback_form{
+    &Title{
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #535353;
+      text-align: center;
+      margin: 0 0 28px 0;
+    }
+    form{
+      label{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: #535353;
+        font-family: Arimo, sans-serif;
+        margin: 0 0 16px 0;
+        span{
+          color: #ce3034;
+        }
+        input{
+          width: 96.67%;
+          display: block;
+          border: 1px solid #c3c3c3;
+          margin: 7px 0 0 0;
+          padding: 10px 5px;
+          &:focus{
+            outline: none;
+          }
+          &.error{
+            border: 1px solid #ff8383;
+            background: url("/img/error_bg.png") no-repeat 0 0;
+            font-size: 14px;
+            color: #dc7f7f;
+          }
+        }
+        textarea{
+          min-height: 120px;
+          max-width: 96.67%;
+          width: 96.67%;
+          padding: 10px 5px;
+          border: 1px solid #c3c3c3;
+          margin: 6px 0 0 0;
+        }
+        &.button{
+          text-align: right;
+          #button{
+            min-width: 128px;
+            background: #282c37;
+            display: inline-block;
+            width: 30%;
+            text-transform: uppercase;
+            font-family: Arimo, sans-serif;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+          }
+        }
+        p{
+          text-indent: -9999px;
+          font-size: 0;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+.box-modal_close {
+  position: absolute;
+  background: url("/img/close.png") no-repeat 0 0;
+  right: -27px;
+  top: -27px;
+  font-size: 0;
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+}
+.box-modal_close:hover {
+  opacity: 0.6;
+}
